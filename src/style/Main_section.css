@@ -1,0 +1,85 @@
+body {
+  margin-left: 0px;
+}
+
+.section {
+  display: block;
+  background-color: #fbf8f3;
+  padding-bottom: 4%;
+}
+
+.top__img {
+  display: block;
+}
+
+.top__img > img {
+  padding-bottom: 4%;
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+}
+
+.color__Box {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 4%;
+}
+
+#color_box_1 {
+  width: 20.6%;
+  height: 22px;
+  background-color: #e2c08c;
+  border: none;
+}
+
+#color_box_2 {
+  width: 20.6%;
+  height: 22px;
+  background-color: #593b0d;
+  border: none;
+}
+
+#color_box_3 {
+  width: 20.6%;
+  height: 22px;
+  background-color: #0d0800;
+  border: none;
+}
+
+.notice_header {
+  background: rgba(89, 59, 13, 0.5);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+}
+
+.notice_header > h2 {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4vmin;
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.notice_section {
+  
+}
+
+.section_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.section_bottom > a > img {
+  max-width: 100%;
+  height: auto !important;
+  width: auto !important;
+}
