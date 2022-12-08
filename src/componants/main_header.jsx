@@ -38,14 +38,14 @@ function Main_Header() {
                 <li><a href="">서비스 사용 후기</a></li>
                 <li><a href="">이벤트 일정</a></li>
                 <li><a href="">찾아 오시는 길</a></li>
-                {
+                {/* {
                     res ? (
                         <li><button onClick="return logout()">로그아웃</button></li>
                     )
                         : (
                         <li><button onClick="return login()"><b>로그인</b></button></li >
                     )
-                }
+                } */}
 
             </div>
             <button className='navbar__toogleBtn'>
