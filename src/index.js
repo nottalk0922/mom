@@ -8,12 +8,9 @@ import { RecoilRoot } from 'recoil';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <Routes>
-  // <Route path=''></Route>
   <RecoilRoot>
     <App />
   </RecoilRoot>
-  /* </Routes> */
 );
 
 // If you want to start measuring performance in your app, pass a function
