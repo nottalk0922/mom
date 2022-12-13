@@ -8,14 +8,14 @@ import axios from "axios";
 function Eventpage() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    axios.get("http://10.150.149.50/events").then(({ data }) => {
+    axios.get("http://10.150.149.50/api/events").then(({ data }) => {
       setEvents(data);
     });
   }, []);
 
   const good = events.map((event, idx) => {
     return (
-      <tr className="event_table">
+      <tr key={idx} className="event_table">
         <td>
           <div
             className="event"
@@ -48,7 +48,7 @@ function Eventpage() {
 
       <div className="list-webzine">
         <div className="list-media">
-          <div class>
+          <div className="">
             <img src=""></img>
           </div>
           <div className=""></div>

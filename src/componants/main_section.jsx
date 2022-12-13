@@ -1,9 +1,7 @@
 import "../style/Main_section.css";
 import React, { useState } from "react";
 import axios from "axios";
-import cheerio from "cheerio";
 import { useEffect } from "react";
-import { getHTML } from "./notice.js";
 
 function Main_section() {
   const [events, setEvents] = useState([]);
@@ -15,7 +13,7 @@ function Main_section() {
 
   const good = events.map((event, idx) => {
     return (
-      <tr className="event_table">
+      <tr key={idx} className="event_table">
         <td>
           <div
             className="event"

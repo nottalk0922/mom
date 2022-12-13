@@ -13,23 +13,23 @@ function Banner() {
     return (
         <div className="slider">
             <Slider {...settings}>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_1.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_1.jpg" className="img"></img>
                 </div>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_2.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_2.jpg" className="img"></img>
                 </div>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_3.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_3.jpg" className="img"></img>
                 </div>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_4.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_4.jpg" className="img"></img>
                 </div>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_5.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_5.jpg" className="img"></img>
                 </div>
-                <div class="img">
-                    <img src="./img/Downloads/header-img_6.jpg" class="img"></img>
+                <div className="img">
+                    <img src="./img/Downloads/header-img_6.jpg" className="img"></img>
                 </div>
             </Slider>
         </div>

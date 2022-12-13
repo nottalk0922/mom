@@ -1,7 +1,7 @@
 import Header from "./main_header";
 import Footer from "./main_footer";
 
-function Main_Header() {
+function Usemoney() {
   return (
     <div>
       <Header />
@@ -12,25 +12,16 @@ function Main_Header() {
         <h2>이용 및 요금 안내</h2>
         <ul>
           <li>
-            <a href="">이용절차</a>
+            <a href="useProcess.jsx">이용절차</a>
           </li>
           <li>
-            <a href="">산후관리 이용요금</a>
+            <a href="sanhuUsemoney.jsx">산후관리 이용요금</a>
           </li>
           <li>
-            <a href="">바우처 이용요금</a>
+            <a href="bauchurUsemoney.jsx">바우처 이용요금</a>
           </li>
           <li>
-            <a href="">산모 밀키트 이용요금</a>
-          </li>
-          <li>
-            <a href="">이용요금 계산기</a>
-          </li>
-          <li>
-            <a href="">이용절차</a>
-          </li>
-          <li>
-            <a href="">이용절차</a>
+            <a href="sanmoUsemoney.jsx">산모 밀키트 이용요금</a>
           </li>
         </ul>
       </div>
@@ -39,4 +30,4 @@ function Main_Header() {
   );
 }
 
-export default Main_Header;
+export default Usemoney;

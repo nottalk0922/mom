@@ -26,6 +26,6 @@ li {
 
 @media screen and (max-width: 800px) {
   .categorybar__menu > li {
-    zoom:0.5;
+    zoom: 0.3;
   }
 }

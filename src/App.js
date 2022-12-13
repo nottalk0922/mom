@@ -10,6 +10,8 @@ import getUser from './api/getUser';
 import { useRecoilState } from 'recoil';
 import { userState } from './recoilState/user.state';
 import axios from 'axios';
+import Usemoney from './componants/usemoney'
+
 
 function App() {
   const [user, setUser] = useRecoilState(userState);
@@ -35,12 +37,13 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Main_Header />
+      {/* <Main_Header />
       <Baaner />
       <Main_Nav />
       <Main_section />
-      <Main_footer />
+      <Main_footer /> */}
       {/* <Eventpage /> */}
+      <Usemoney />
     </div>
   );
 }
