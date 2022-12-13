@@ -42,7 +42,7 @@ function Main_Header() {
       </div>
       <div className="navbar__menu">
         <li>
-          <a href="/Usemoney">산후관리 서비스 이용 요금</a>
+          <a href="/이용요금안내">산후관리 서비스 이용 요금</a>
         </li>
         <li>
           <a href="/">출산ㆍ육아 정보</a>
@@ -51,10 +51,10 @@ function Main_Header() {
           <a href="">서비스 사용 후기</a>
         </li>
         <li>
-          <a href="/eventPage">이벤트 일정</a>
+          <a href="/이벤트일정">이벤트 일정</a>
         </li>
         <li>
-          <a href="">찾아 오시는 길</a>
+          <a href="/찾아오시는길">찾아 오시는 길</a>
         </li>
         {!user.isLogin ? (
           <li>
