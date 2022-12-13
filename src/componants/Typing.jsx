@@ -2,6 +2,7 @@ import React from "react";
 import "../style/typing.css";
 import "@toast-ui/editor/dist/toastui-editor.css";
 import { Editor } from "@toast-ui/react-editor";
+import axios from "axios";
 function Typing() {
   return (
     <div className="type">
@@ -24,6 +25,24 @@ function Typing() {
             ["table", "image", "link"],
             ["code", "codeblock"],
           ]}
+          hooks={{
+            addImageBlobHook: async (blob, callback) => {
+              console.log(blob); // File {name: '카레유.png', ... }
+
+              const uploadFile = blob;
+              const formData = new FormData();
+              formData.append("img", uploadFile);
+              const { data } = await axios({
+                method: "post",
+                url: "/api/board/uploadImage",
+                data: formData,
+                headers: {
+                  "Content-Type": "multipart/form-data",
+                },
+              });
+              callback(data, "카레유");
+            },
+          }}
         />
       </div>
       <div class="button_div">
