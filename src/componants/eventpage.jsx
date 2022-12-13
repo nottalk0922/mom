@@ -15,9 +15,8 @@ function Eventpage() {
 
   const good = events.map((event, idx) => {
     return (
-      <tr key={idx} className="event_table">
-        <td>
-          <div
+      <div
+        key={idx}
             className="event"
             onClick={() => {
               window.location = event.url;
@@ -25,8 +24,6 @@ function Eventpage() {
           >
             <strong>{event.title}</strong>
           </div>
-        </td>
-      </tr>
     );
   });
   return (
@@ -42,7 +39,7 @@ function Eventpage() {
           <h5>Notice</h5>
         </div>
         <div className="notice_section">
-          <table>{good}</table>
+          {good}
         </div>
       </div>
 

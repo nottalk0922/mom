@@ -13,18 +13,15 @@ function Main_section() {
 
   const good = events.map((event, idx) => {
     return (
-      <tr key={idx} className="event_table">
-        <td>
-          <div
-            className="event"
-            onClick={() => {
-              window.location = event.url;
-            }}
-          >
-            <strong>{event.title}</strong>
-          </div>
-        </td>
-      </tr>
+      <div
+        key={idx}
+        className="event"
+        onClick={() => {
+          window.location = event.url;
+        }}
+      >
+        <strong>{event.title}</strong>
+      </div>
     );
   });
 
@@ -42,9 +39,7 @@ function Main_section() {
       <div className="notice_header">
         <h2>Notice</h2>
       </div>
-      <div className="notice_section">
-        <table>{good}</table>
-      </div>
+      <div className="notice_section">{good}</div>
       <div className="section_bottom">
         <a href="">
           <img src="./img/section_bottom_img_1.png"></img>

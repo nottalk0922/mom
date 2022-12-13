@@ -37,12 +37,12 @@ function App() {
   }, []);
   return (
     <div className="App">
-      {/* <Main_Header />
+      <Main_Header />
       <Baaner />
       <Main_Nav />
       <Main_section />
-      <Main_footer /> */}
-      {/* <Eventpage /> */}
+      <Main_footer />
+      <Eventpage />
       <Usemoney />
     </div>
   );
