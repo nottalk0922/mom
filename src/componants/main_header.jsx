@@ -1,9 +1,17 @@
 import "../style/Main_header.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faIcons } from "@fortawesome/free-solid-svg-icons";
+import { useRecoilState } from "recoil";
+import { userState } from "../recoilState/user.state";
 
 function Main_Header() {
+  const [user, setUser] = useRecoilState(userState);
+
+  useEffect(() => {
+    console.log(user);
+  }, []);
+
   const handler = () => {
     const toogleBtn = document.querySelector(".navbar__toogleBtn");
     const menu = document.querySelector(".navbar__menu");
@@ -48,14 +56,19 @@ function Main_Header() {
         <li>
           <a href="">찾아 오시는 길</a>
         </li>
-        <li>
-          <button onClick={login}>
-            <b>로그인</b>
-          </button>
-        </li>
-        <li>
-          <button onClick={logout}>로그아웃</button>
-        </li>
+        {!user.isLogin ? (
+          <li>
+            <button onClick={login} className="loginbtn">
+              <b>로그인</b>
+            </button>
+          </li>
+        ) : (
+          <li>
+            <button onClick={logout} className="loginbtn">
+              로그아웃
+            </button>
+          </li>
+        )}
       </div>
       <button className="navbar__toogleBtn">
         <FontAwesomeIcon icon={faBars} onClick={handler} />

@@ -42,8 +42,8 @@ function App() {
       <Main_Nav />
       <Main_section />
       <Main_footer />
-      <Eventpage />
-      <Usemoney />
+      {/* <Eventpage />
+      <Usemoney /> */}
     </div>
   );
 }
