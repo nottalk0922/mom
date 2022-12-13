@@ -83,3 +83,16 @@ body {
   height: auto !important;
   width: auto !important;
 }
+
+table{
+  width: 100%;
+}
+
+.event{
+  height: 4vh;
+  background-color:#ffe7cb;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

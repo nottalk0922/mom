@@ -13,13 +13,13 @@ getHTML()
     .then((html) => {
         let titleList = [];
         const $ = cheerio.load(html.data);
-        const bodyList = $("div.list-group").children("a");
+        const bodyList = $("div.list-webzine").children("div");
 
         bodyList.each(function (i, elem) {
             titleList[i] = {
-                title: $(this).find("a strong.black").text(),
-                url: $(this).attr('href'),
-                date: $(this).find("a span.hidden-xs").text()
+                url: $(this).find("div div div div div a").attr('href'),
+                bodyText: $(this).find("div div a").text(),
+                date: $(this).find("div div div div span").text()
             };
         });
         return titleList;
