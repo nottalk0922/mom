@@ -42,16 +42,16 @@ function Main_Header() {
       </div>
       <div className="navbar__menu">
         <li>
-          <a href="">산후관리 서비스 이용 요금</a>
+          <a href="/Usemoney">산후관리 서비스 이용 요금</a>
         </li>
         <li>
-          <a href="">출산ㆍ육아 정보</a>
+          <a href="/">출산ㆍ육아 정보</a>
         </li>
         <li>
           <a href="">서비스 사용 후기</a>
         </li>
         <li>
-          <a href="">이벤트 일정</a>
+          <a href="/eventPage">이벤트 일정</a>
         </li>
         <li>
           <a href="">찾아 오시는 길</a>
