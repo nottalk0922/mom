@@ -8,7 +8,7 @@ import { getHTML } from "./notice.js";
 function Main_section() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    axios.get("http://10.150.149.50/events").then(({ data }) => {
+    axios.get("api/events").then(({ data }) => {
       setEvents(data);
     });
   }, []);
