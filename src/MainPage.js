@@ -10,26 +10,6 @@ import axios from 'axios';
 
 function MainPage() {
     const [user, setUser] = useRecoilState(userState);
-
-    useEffect(() => {
-        axios.get("/api/user", { withCredentials: true }).then(({ data }) => {
-            console.log(data);
-        }).catch(e => {
-            console.log(e);
-        })
-        // (async () => {
-        //   try {
-        //     const { data } = await axios.get("/user");
-        //     console.log(data);
-        //   } catch (error) {
-        //     if (error.response?.status === 401) {
-        //     }
-        //   }
-        //   // if (!user?.isLogin) {
-        //   //   setUser({ ...await getUser() });
-        //   // }
-        // })();
-    }, []);
     return (
         <div className="App">
             <Main_Header />

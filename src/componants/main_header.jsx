@@ -4,12 +4,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faIcons } from "@fortawesome/free-solid-svg-icons";
 import { useRecoilState } from "recoil";
 import { userState } from "../recoilState/user.state";
+import getUser from "../api/getUser";
+import axios from "axios";
+import { useNavigate } from "react-router";
+import logoutUser from "../api/logoutUser";
 
 function Main_Header() {
   const [user, setUser] = useRecoilState(userState);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
-    console.log(user);
+    (async () => {
+      if (!user.isLogin) {
+        const fetchedUser = await getUser();
+        if (!fetchedUser) {
+          navigate("/");
+        }
+        setUser(fetchedUser);
+      }
+      console.log(user);
+    })();
   }, []);
 
   const handler = () => {
@@ -26,12 +41,14 @@ function Main_Header() {
     document.getElementById("myNavbar").style.height = "0";
   }
 
-  function login() {
-    window.location = "http://10.150.149.50/auth/naver";
+  function loginHandler() {
+    window.location =
+      "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=SuFcZZufWG8GfJyJqYUR&redirect_uri=http://10.150.149.183:3000/aftLogin";
   }
-  function logout() {
-    window.location = "http://10.150.149.50/auth/logout";
-  }
+  const logoutHandler = async () => {
+    await logoutUser();
+    window.location.reload();
+  };
 
   return (
     <nav id="myNavbar" className="navbar">
@@ -51,20 +68,26 @@ function Main_Header() {
           <a href="">서비스 사용 후기</a>
         </li>
         <li>
-          <a href="/이벤트일정">이벤트 일정</a>
+          <a href="/event">이벤트 일정</a>
         </li>
         <li>
           <a href="/찾아오시는길">찾아 오시는 길</a>
         </li>
+        {user.name ? (
+          <li>
+            <a>{user?.name}님 환영합니다.</a>
+          </li>
+        ) : null}
+
         {!user.isLogin ? (
           <li>
-            <button onClick={login} className="loginbtn">
+            <button onClick={loginHandler} className="loginbtn">
               <b>로그인</b>
             </button>
           </li>
         ) : (
           <li>
-            <button onClick={logout} className="loginbtn">
+            <button onClick={logoutHandler} className="loginbtn">
               로그아웃
             </button>
           </li>
