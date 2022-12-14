@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import "./style/style.css";
 import KakaoMap from "./component/KakaoMap";
@@ -13,9 +14,18 @@ export default function App() {
   ];
 
   const [mapSize, setMapSize] = useState([900, 450]);
+=======
+import './App.css';
+import React, { Component, useEffect } from 'react';
+import MainPage from './MainPage';
+import Usemoney from './componants/usemoney'
+import EventPage from './componants/eventpage'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+>>>>>>> upstream/main
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <Header />
 
 
@@ -48,6 +58,18 @@ export default function App() {
       </section>
 
       <Footer />
+=======
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<MainPage />}></Route>
+          <Route path="/eventPage" element={<EventPage />}></Route>
+          <Route path="/Usemoney" element={<Usemoney />}></Route>
+        </Routes>
+      </BrowserRouter>
+
+      {/* <Eventpage />
+      <Usemoney /> */}
+>>>>>>> upstream/main
     </div>
   );
 }
