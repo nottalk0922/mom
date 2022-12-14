@@ -66,7 +66,9 @@ function Main_Header() {
           <a href="/이용요금안내">산후관리 서비스 이용 요금</a>
         </li>
         <li>
-          <a href="/">출산ㆍ육아 정보</a>
+          <a href="https://blog.naver.com/joeun-mom/222946899996">
+            출산ㆍ육아 정보
+          </a>
         </li>
         <li>
           <a href="/list">서비스 사용 후기</a>

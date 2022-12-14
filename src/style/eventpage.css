@@ -1,0 +1,45 @@
+.Title {
+  display: flex;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  color: #5a4139;
+  width: 100%;
+  align-items: center;
+}
+
+.Title > h2 {
+  margin-left: 14vh;
+}
+
+.Title > img {
+  width: 6vh;
+  height: 6vh;
+}
+
+.line0 {
+  display: block;
+  width: 90%;
+}
+
+.notice_header {
+  width: 90%;
+  height: 4vh;
+  margin: auto;
+  background: #fbf2e0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: start;
+  align-items: center;
+}
+
+.notice_header > p {
+  align-items: center;
+  text-align: start;
+  margin-left: 1vh;
+  line-height: 10%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bolder;
+  color: #5a4139;
+}
