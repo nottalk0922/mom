@@ -1,0 +1,73 @@
+.top-line {
+  width: 80%;
+  border: 2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.review-bar {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.review-bar.name {
+  color: #5a4139;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.review-bar.btn > .write-btn {
+  border: 0;
+  color: black;
+  background-color: #fffaf1;
+  font-size: 14px;
+  padding-left: 0;
+  margin-left: 1rem;
+}
+.review-bar.btn {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.write-img {
+  width: 100%;
+}
+
+.btn1 {
+  margin-left: 5rem;
+}
+.hr {
+  width: 85.5%;
+  margin-left: 5%;
+}
+.each-review > .reviews > .hr {
+  width: 90%;
+  margin-left: 0;
+}
+.each-review > .reviews {
+  margin-left: 5%;
+}
+.each-review > .reviews > .review-title {
+  margin-right: 1rem;
+}
+
+.review-createdAt {
+  float: right;
+  margin-right: 10%;
+}
+.page {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.page-num {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.page-btn {
+  background-color: #fffaf1;
+  border: 0;
+  font-size: 15px;
+}

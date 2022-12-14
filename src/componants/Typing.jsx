@@ -5,8 +5,11 @@ import { Editor } from "@toast-ui/react-editor";
 //@toast-ui/editor/dist/toastui-editor-viewer
 import axios from "axios";
 import { useNavigate } from "react-router";
+import Main_Header from "./main_header";
+import Main_footer from "./main_footer";
 function Typing() {
   const [title, setTitle] = useState("");
+  const [service, setService] = useState("");
   const editorRef = useRef();
   const navigate = useNavigate();
 
@@ -16,7 +19,7 @@ function Typing() {
       .post("/api/board/uploadLetter", {
         title: title,
         content: letter,
-        serviceType: "서비스타입",
+        serviceType: service,
       })
       .then(({ data }) => {
         navigate("/letter/" + data);
@@ -24,6 +27,7 @@ function Typing() {
   };
   return (
     <div className="type">
+      <Main_Header />
       <div class="type_title">
         제목
         <input
@@ -31,6 +35,14 @@ function Typing() {
           type="text"
           placeholder=" 제목을 작성하세요"
           onChange={(e) => setTitle(e.target.value)}
+        />
+        서비스 유형
+        <br />
+        <input
+          class="service"
+          type="text"
+          placeholder=" 서비스 유형을 작성하세요"
+          onChange={(a) => setService(a.target.value)}
         />
       </div>
       <div class="type_txt">
@@ -79,6 +91,7 @@ function Typing() {
           value="등록하기"
         />
       </div>
+      <Main_footer />
     </div>
   );
 }

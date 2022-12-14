@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const getUser = async () => {
-    const localUser = localStorage.getItem("userInfo");
-    let dt = localUser ? JSON.parse(localUser) : null;
+    let dt = null;
+
     if (!dt) {
         try {
             const { data } = await axios.get("/api/user", { withCredentials: true });
@@ -18,7 +18,6 @@ const getUser = async () => {
             }
         }
     }
-    localStorage.setItem("userInfo", JSON.stringify(dt));
     return dt;
 };
 
