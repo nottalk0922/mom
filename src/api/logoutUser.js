@@ -7,7 +7,6 @@ const logoutUser = async () => {
         dt = {
             isLogin: false,
         };
-        localStorage.setItem("userInfo", JSON.stringify(dt));
     } catch (error) {
         if (error.response?.status === 401) {
         }
