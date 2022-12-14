@@ -7,7 +7,7 @@ export default function footer() {
         <footer>
             <div className='footerbar'>
                 <div className='footerbar__logo'>
-                    <a href=''><img src='./images/logo.png' className='logo' width="120px" height="50px"></img></a>
+                    <a href=''><img src='./img/logo.png' className='logo' width="120px" height="50px"></img></a>
                 </div>
                 <div className='footerbar'>
                     조은맘 산후도우미 부산지점<br />
