@@ -1,0 +1,32 @@
+.submit_button {
+  background-color: #698aff;
+  color: white;
+  width: 20vh;
+  height: 5vh;
+  margin-top: 7vh;
+  border-radius: 20px;
+  border-color: #698aff;
+  font-size: 17px;
+}
+.type_txt {
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+.button_div {
+  text-align: center;
+}
+body {
+  background-color: #fffaf1;
+}
+.type_title {
+  margin-top: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+.title {
+  height: 50px;
+  width: 187vh;
+  border-color: #dadde6;
+  border-radius: 4px;
+}
