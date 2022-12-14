@@ -41,6 +41,10 @@ a {
   display: none;
   right: 2vh;
 }
+ul{
+  align-items: center;
+  text-align: center;
+}
 
 .loginbtn {
   border: none;
