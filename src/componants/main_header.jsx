@@ -43,7 +43,7 @@ function Main_Header() {
 
   function loginHandler() {
     window.location =
-      "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=SuFcZZufWG8GfJyJqYUR&redirect_uri=http://10.150.149.183:3000/aftLogin";
+      "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=SuFcZZufWG8GfJyJqYUR&redirect_uri=http://10.150.150.85:3000/aftLogin";
   }
 
   const logoutHandler = async () => {
@@ -54,7 +54,7 @@ function Main_Header() {
     <nav id="myNavbar" className="navbar">
       <div className="navbar__logo">
         <img
-          src="./img/logo.png"
+          src="../img/logo.png"
           onClick={() => {
             navigate("/");
           }}

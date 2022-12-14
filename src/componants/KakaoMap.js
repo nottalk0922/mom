@@ -5,7 +5,7 @@ import React, { useEffect, useState, useRef } from "react";
 export default function KakaoMap(props) {
   const { markerPositions, size } = props;
   const [kakaoMap, setKakaoMap] = useState(null);
-  const [, setMarkers] = useState([]);
+  const [marker, setMarkers] = useState([]);
 
   const container = useRef();
 
