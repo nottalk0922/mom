@@ -9,6 +9,8 @@ import { AfterLogin } from "./componants/aft_login";
 import Letter from "./componants/letter";
 import Auth from "./hoc/auth";
 import LetterList from "./componants/list";
+import Way from "./componants/way"
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Route path="/aftLogin" element={<AfterLogin />}></Route>
           <Route path="/letter/:code" element={<Letter />}></Route>
           <Route path="/list" element={<LetterList />} ></Route>
+          <Route path="/찾아오시는길" element={<Way />} ></Route>
         </Routes>
       </BrowserRouter>
 

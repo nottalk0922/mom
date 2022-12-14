@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Header from "./main_header";
 import Footer from "./main_footer";
 import axios from "axios";
+import "../style/eventpage.css";
 
 function Eventpage() {
   const [events, setEvents] = useState([]);
@@ -17,32 +18,30 @@ function Eventpage() {
     return (
       <div
         key={idx}
-            className="event"
-            onClick={() => {
-              window.location = event.url;
-            }}
-          >
-            <strong>{event.title}</strong>
-          </div>
+        className="event"
+        onClick={() => {
+          window.location = event.url;
+        }}
+      >
+        <strong>{event.title}</strong>
+      </div>
     );
   });
   return (
     <div>
       <Header />
-      <div className="title">
+      <div className="Title">
         <h2>이벤트</h2>
         <img src="./img/gift-box.png"></img>
       </div>
-
+      <hr className="line0" />
       <div className="notice">
         <div className="notice_header">
-          <h5>Notice</h5>
+          <p>공지사항</p>
         </div>
-        <div className="notice_section">
-          {good}
-        </div>
+        <div className="notice_section">{good}</div>
       </div>
-
+      <hr className="line0" />
       <div className="list-webzine">
         <div className="list-media">
           <div className="">
