@@ -1,0 +1,41 @@
+.footerbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: small;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    ;
+}
+
+footer {
+    background: #F8F3e6;
+}
+
+.logo {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .footerbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footerbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+}
