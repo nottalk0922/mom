@@ -18,12 +18,12 @@ function Main_Header() {
     (async () => {
       if (!user.isLogin) {
         const fetchedUser = await getUser();
-        if (!fetchedUser) {
+        if (!fetchedUser.isLogin) {
           navigate("/");
         }
-        setUser(fetchedUser);
+        console.log(fetchedUser);
+        setUser({ ...fetchedUser });
       }
-      console.log(user);
     })();
   }, []);
 
@@ -45,17 +45,21 @@ function Main_Header() {
     window.location =
       "https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=SuFcZZufWG8GfJyJqYUR&redirect_uri=http://10.150.149.183:3000/aftLogin";
   }
+
   const logoutHandler = async () => {
-    await logoutUser();
-    window.location.reload();
+    setUser({ ...(await logoutUser()) });
   };
 
   return (
     <nav id="myNavbar" className="navbar">
       <div className="navbar__logo">
-        <a href="">
-          <img src="./img/logo.png" className="logo"></img>
-        </a>
+        <img
+          src="./img/logo.png"
+          onClick={() => {
+            navigate("/");
+          }}
+          className="logo"
+        ></img>
       </div>
       <div className="navbar__menu">
         <li>
@@ -65,7 +69,7 @@ function Main_Header() {
           <a href="/">출산ㆍ육아 정보</a>
         </li>
         <li>
-          <a href="">서비스 사용 후기</a>
+          <a href="/list">서비스 사용 후기</a>
         </li>
         <li>
           <a href="/event">이벤트 일정</a>
