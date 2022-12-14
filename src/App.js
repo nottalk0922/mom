@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AfterLogin } from "./componants/aft_login";
 import Letter from "./componants/letter";
 import Auth from "./hoc/auth";
+import LetterList from "./componants/list";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/event" element={<EventPage />}></Route>
           <Route path="/이용요금안내" element={<Usemoney />}></Route>
-          <Route path="/Typing" element={Auth(<Typing />)}></Route>
+          <Route path="/Typing" element={<Typing />}></Route>
           <Route path="/aftLogin" element={<AfterLogin />}></Route>
           <Route path="/letter/:code" element={<Letter />}></Route>
+          <Route path="/list" element={<LetterList />} ></Route>
         </Routes>
       </BrowserRouter>
 
