@@ -43,3 +43,23 @@
   font-weight: bolder;
   color: #5a4139;
 }
+
+.crawl-section {
+  width: 90%;
+  text-align: start;
+  align-items: center;
+  margin: auto;
+  border-color: #000000;
+}
+
+.eventsection {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 8vh;
+  padding: 2vh;
+}
+
+.eventsection > div {
+  padding-left: 2vh;
+}

@@ -25,9 +25,16 @@ body {
   margin-left: 2vh;
   margin-right: 2vh;
 }
-.title {
+.title1 {
   height: 50px;
-  width: 187vh;
+  width: 99.5%;
+  border-color: #dadde6;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.service {
+  height: 50px;
+  width: 99.5%;
   border-color: #dadde6;
   border-radius: 4px;
 }

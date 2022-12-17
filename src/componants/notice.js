@@ -13,7 +13,7 @@ getHTML()
     .then((html) => {
         let titleList = [];
         const $ = cheerio.load(html.data);
-        const bodyList = $("div.list-webzine").children("div");
+        const bodyList = $("").children("div");
 
         bodyList.each(function (i, elem) {
             titleList[i] = {

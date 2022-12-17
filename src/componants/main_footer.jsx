@@ -5,7 +5,7 @@ function Main_footer() {
   return (
     <footer className="footer">
       <div className="logo">
-        <img src="./img/logo.png" id="logo" />
+        <img src="../img/logo.png" id="logo" />
       </div>
       <div className="p">
         <p>

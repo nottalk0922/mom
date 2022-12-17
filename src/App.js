@@ -19,7 +19,6 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/event" element={<EventPage />}></Route>
-          <Route path="/이용요금안내" element={<Usemoney />}></Route>
           <Route path="/Typing" element={<Typing />}></Route>
           <Route path="/aftLogin" element={<AfterLogin />}></Route>
           <Route path="/letter/:code" element={<Letter />}></Route>

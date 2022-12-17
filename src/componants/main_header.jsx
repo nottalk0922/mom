@@ -18,10 +18,6 @@ function Main_Header() {
     (async () => {
       if (!user.isLogin) {
         const fetchedUser = await getUser();
-        if (!fetchedUser.isLogin) {
-          navigate("/");
-        }
-        console.log(fetchedUser);
         setUser({ ...fetchedUser });
       }
     })();
@@ -54,7 +50,7 @@ function Main_Header() {
     <nav id="myNavbar" className="navbar">
       <div className="navbar__logo">
         <img
-          src="./img/logo.png"
+          src="../img/logo.png"
           onClick={() => {
             navigate("/");
           }}
@@ -63,7 +59,9 @@ function Main_Header() {
       </div>
       <div className="navbar__menu">
         <li>
-          <a href="/이용요금안내">산후관리 서비스 이용 요금</a>
+          <a href="http://www.xn--xz2b58vb0a.com/bbs/page.php?hid=m03_01">
+            산후관리 서비스 이용 요금
+          </a>
         </li>
         <li>
           <a href="https://blog.naver.com/joeun-mom/222946899996">
