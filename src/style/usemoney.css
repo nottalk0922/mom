@@ -1,0 +1,78 @@
+.body {
+  background-color: white;
+}
+
+.TopTitle {
+  display: flex;
+  justify-content: center;
+}
+
+.category {
+  display: block;
+  width: 30vh;
+  align-items: left;
+  text-align: center;
+}
+
+.category > h2 {
+  display: flex;
+  margin-left: 3vh;
+  font-size: 3vh;
+  font-weight: 300;
+  width: 30vh;
+  border-bottom: 3px solid #766c62;
+  text-indent: 30px;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.category > ul {
+  color: #83715f;
+  font-size: 2vh;
+  font-weight: 300;
+  width: 30vh;
+  text-indent: 30px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.category > ul > li {
+  display: flex;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid #e2e0de;
+  background: url(http://www.xn--xz2b58vb0a.com/img/sub_mbt.jpg) no-repeat 90%
+    center;
+}
+
+.내용 {
+  display: flex;
+}
+
+.아주큰내용 {
+  display: block;
+  margin-top: 5vh;
+  margin-left: 8vh;
+}
+
+.이용절차 {
+  color: #83715f !important;
+  font-size: 3.9vh;
+  font-weight: bold;
+  padding-bottom: 4.5vh;
+  border-bottom: 0.14vh solid #e2e0de;
+}
+
+.조은맘서비스절차안내 {
+  font-size: 18px;
+  font-weight: bold;
+  background: url(http://www.xn--xz2b58vb0a.com/img/sub_r_bt01.jpg) no-repeat 00;
+  text-indent: 23px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.절차 {
+  display: block;
+  zoom: 0.8;
+}

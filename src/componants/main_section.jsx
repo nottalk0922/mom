@@ -7,7 +7,8 @@ function Main_section() {
   const [events, setEvents] = useState([]);
   useEffect(() => {
     axios.get("api/events").then(({ data }) => {
-      setEvents(data);
+      console.log(data);
+      setEvents(data.titleList);
     });
   }, []);
 
@@ -36,21 +37,21 @@ function Main_section() {
         <div id="color_box_2"></div>
         <div id="color_box_3"></div>
       </div>
-      <div className="notice_header">
+      {/* <div className="noticer_header">
         <h2>Notice</h2>
       </div>
-      <div className="notice_section">{good}</div>
+      <div className="notice_section">{good}</div> */}
       <div className="section_bottom">
-        <a href="">
+        <a href="http://www.xn--xz2b58vb0a.com/bbs/page.php?hid=m03_01">
           <img src="./img/section_bottom_img_1.png"></img>
         </a>
-        <a href="">
+        <a href="http://www.xn--xz2b58vb0a.com/bbs/page.php?hid=m03_02">
           <img src="./img/section_bottom_img_2.png"></img>
         </a>
-        <a href="">
+        <a href="https://blog.naver.com/prologue/PrologueList.naver?blogId=joeun-mom&skinType=&skinId=&from=menu&userSelectMenu=true">
           <img src="./img/section_bottom_img_3.png"></img>
         </a>
-        <a href="">
+        <a href="http://www.xn--xz2b58vb0a.com/bbs/board.php?bo_table=m05_01">
           <img src="./img/section_bottom_img_4.png"></img>
         </a>
       </div>

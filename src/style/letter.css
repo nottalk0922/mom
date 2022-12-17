@@ -1,0 +1,46 @@
+.title {
+  text-align: center;
+}
+
+.board {
+  margin-top: 0.5rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+.modify-btn {
+  margin-right: 1rem;
+  background-color: white;
+  border-radius: 10px;
+}
+.delete-btn {
+  background-color: white;
+  border-radius: 10px;
+}
+.board img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3 {
+  margin-top: 0px;
+}
+/* .paragraph{
+    text-align: center;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-block: 30px;
+
+} */
+.paragraph img {
+  width: 50%;
+}
+span {
+  margin-top: 3px;
+}

@@ -81,8 +81,9 @@ function LetterList() {
           />
         </div>
       ) : null}
-      <hr class="hr" />
+
       <div class="each-review">
+        <hr class="hr" />
         {list.map((letter, idx) => {
           return (
             <div
@@ -92,10 +93,12 @@ function LetterList() {
               class="reviews"
             >
               <span class="review-title">{letter?.title}</span>
-              <span class="review-service">{letter?.serviceType}</span>
               <span class="review-createdAt">
                 {displayedAt(letter?.createdAt)}
               </span>
+              <span class="review-service">{letter?.serviceType}</span>
+              <span calss="review-writer">{letter?.writer?.name}</span>
+
               <hr class="hr" />
             </div>
           );
